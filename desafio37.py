@@ -9,3 +9,8 @@ while contador < final :
        nao[contador] = True 
     contador += 1
 print(nao)
+contador = 0
+if all(nao):
+    print('e um número Binário!')
+else:
+    print('Não e um número Binário')
