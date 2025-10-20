@@ -1,4 +1,4 @@
-idade = int(input('Digite sua idade?'))
+idade = int(input('Digite sua idade? '))
 contador = 0
 idademenor = idade
 if idade < 18:
@@ -12,4 +12,7 @@ if idade < 18:
 elif idade == 18:
     print('Chegou a hora de se alistar!')
 else:
-    print('Já passou o tempo de sé alistar!')
+    while idademenor > 18:
+        idademenor -= 1
+        contador += 1         
+    print('Já passou o tempo de sé alistar! isso foi {} ano(s) atrás.'.format(contador))
