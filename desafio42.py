@@ -19,4 +19,5 @@ else:
 if r1 != r2 and r1 != r3 and r2 != r3:
     print('Os segmentos acima PODEM FORMAR UM ESCALENO')
 else:
-    print('s segmentos acima NÃO PODEM FORMAR UM ESCALENO')
+    print('Os segmentos acima NÃO PODEM FORMAR UM ESCALENO')
+    
