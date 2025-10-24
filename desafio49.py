@@ -1,7 +1,7 @@
 numero = input('Digite um número?')
 c2 = 11
 resultado = 0
-c = 0
+c = 1
 letra = numero.isalpha()
 inteiro = numero.isdigit()
 if inteiro == True:
