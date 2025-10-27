@@ -6,14 +6,11 @@ for c in range(c, c2, 1):
 c = 0
 c2 = 6
 def todos_inteiros(n):
-    """Verifica se todos os elementos de uma lista podem ser convertidos em inteiros."""
     try:
-        # Tenta converter cada item para int
         for item in n:
             int(item)
         return True
     except (ValueError, TypeError):
-        # Captura erros se a conversão falhar
         return False
 while True:    
     if todos_inteiros(n) == True:
