@@ -1,0 +1,10 @@
+print('=-'*20)
+print('Validar sexo!')
+print('=-'*20)
+sexo = str(input('Digite o sexo da pessoa [M/F] ou [N] de não binario?')).upper()
+while (sexo != 'M' and sexo != 'F' and sexo != 'N'):
+    print('=-'*20)
+    sexo = str(input('Digite [M/S] ou [N] não aceitamos outra opção:').upper()) 
+    print(sexo)
+print('=-'*20)
+print('O sexo escolhido foi [{}] '.format(sexo))
