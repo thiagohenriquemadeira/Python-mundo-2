@@ -22,8 +22,16 @@ termo = primeirotermo
 c = 10
 soma = 10 
 c1 = 0
-while cont <= c:
+while cont <= c or c != 0:
     print('{} '.format(termo), end='')
     termo += razao
     cont += 1
-print('FINAL')
+    if cont == c:
+        print('{} '.format(termo), end='')
+        print('PAUSA')
+        c1 = int(input('Quantos termos você quer mostrar (ou digite 0 para parar):'))
+        c += c1
+        soma = c
+        if c1 == 0:
+            c = 0
+print('Progressão finalizada com {} termos mostrados.'.format(soma))
