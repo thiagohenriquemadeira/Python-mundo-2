@@ -1,4 +1,7 @@
-idade =int(input('Qual a sua idade? '))
+from datetime import date
+ano =int(input('Que ano você nasceu? '))
+hoje = date.today().year
+idade = ( hoje - ano )
 if idade <= 9:
     print(' Você tem {} anos e um atleta MIRIM'.format(idade))  
 elif idade <= 14 and idade  > 9:
